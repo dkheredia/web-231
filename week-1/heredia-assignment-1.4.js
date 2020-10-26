@@ -15,12 +15,13 @@
 /*
     Expected output:
 
-    First name
-    Last name
-    Age
-    Street
-    City
-    Zip code
+    Daniel
+    Heredia
+    43
+    123 Baker Street
+    Ft Wayne
+    46807
+
 */
 
 // variable declaration and assignment
