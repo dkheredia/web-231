@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  header.js
+; Title:  heredia-assignment-2.3.js
 ; Author: Professor Krasso
 ; Date:   30 October 2020
 ; Modified By: Daniel Heredia
@@ -38,6 +38,6 @@ function myName () {
 console.log('\n');
 
 //output
-console.log(myName());
+console.log("Hello " +myName() + " Heredia!");
 
 
