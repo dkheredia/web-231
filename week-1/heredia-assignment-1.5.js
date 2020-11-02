@@ -20,13 +20,13 @@
     Address: 123 Baker Street
     Pay Rate: 10.9
     Hire Date: 10/24/2020
-    
+
     First Name: John
     Last Name: Smith
     Address: 1122 Forest Street
     Pay Rate: 7.3
     Hire Date: 10/24/2020
-    
+
     First Name: Jane
     Last Name: Doe
     Address: 1428 Elm Street

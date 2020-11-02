@@ -1,15 +1,15 @@
 /*
 George,
 
-I found a few errors with your code.  Javascript uses semicolons to separate the end of statements.  
-Therefore, each of your declared variables require a semicolon.  In addition, adding a space after 
-each string of text provides your desired output.  In your console.log output the double quotes inside 
-the function is not recognized when combining variable outputs.  There is also the additional plus signs 
+I found a few errors with your code.  Javascript uses semicolons to separate the end of statements.
+Therefore, each of your declared variables require a semicolon.  In addition, adding a space after
+each string of text provides your desired output.  In your console.log output the double quotes inside
+the function is not recognized when combining variable outputs.  There is also the additional plus signs
 added which is incorrect syntax.
 
 */
 
-/* 
+/*
 ;========================================================
 ; Title: Discussion 1.1
 ; Author: George Henderson
@@ -25,7 +25,7 @@ added which is incorrect syntax.
     Expected output:
 
     Tony Anthony Henderson
-    
+
 */
 
 

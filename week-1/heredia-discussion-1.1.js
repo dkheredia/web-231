@@ -15,7 +15,7 @@
 /*
     Expected output:
 
-    Fri Oct 22 2020 18:03:50 GMT-0400 (Eastern 
+    Fri Oct 22 2020 18:03:50 GMT-0400 (Eastern
     Daylight Time)This class is going to be very challenging
 
 */
@@ -25,7 +25,7 @@ var current = new Date();
 var text = "This class is going to be very challenging;
 
 // output
-console.log current + text 
+console.log current + text
 
 
 // end program

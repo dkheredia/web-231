@@ -1,12 +1,12 @@
 /*
 James,
 I found a few errors with your code.
-Your first output to console has a typo of “Firstname”.  
-JavaScript is case sensitive and as such will not recognize the lower case “n” 
-the same as your declared variable “FirstName”.  
-Secondly, console.log is a function and uses parentheses 
-around what will be displayed to screen.  In addition, in the syntax 
-there is no equal size between the .log and parentheses.  
+Your first output to console has a typo of “Firstname”.
+JavaScript is case sensitive and as such will not recognize the lower case “n”
+the same as your declared variable “FirstName”.
+Secondly, console.log is a function and uses parentheses
+around what will be displayed to screen.  In addition, in the syntax
+there is no equal size between the .log and parentheses.
 Adding the missing () around “TodaysDate” and remove the = will present the expected output.
 */
 
