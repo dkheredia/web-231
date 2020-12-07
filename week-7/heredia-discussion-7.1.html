@@ -1,0 +1,53 @@
+<!--
+============================================
+; Title:  heredia-discussion-7.1.html
+; Author: Professor Krasso
+; Date:   02 December 2020
+; Modified By: Daniel Heredia
+; Description: Create simple a simple HTML
+;page with embedded JavaScript and at least
+;(2) JavaScript selector errors.
+============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discussion 7.1">
+  <meta name="author" content="Daniel Heredia">
+  <title>HTML with Javascript</title>
+<!-- Adding grey background color to Heading and centering the text -->
+  <style>
+    h1{
+      background-color: grey;
+      text-align: center;
+    }
+  </style>
+</head>
+
+
+<body>
+ <!-- Creating a heading with id attribute -->
+  <div id="update">
+  <h1>Welcome to Week 7!</h1>
+  </div>
+ <!-- Creating a button to execute script to display text -->
+<button onclick="myFunction('2','weeks')">Click to see text</button>
+<p id="text"></p>
+<!-- Embedding inline JavaScript -->
+<script>
+// Function to display text including parameters number and time
+function myFunction(number,time) {
+  document.getElementById("text").innerHTML = "Only " + number + " " + time + " left ";
+}
+</script>
+<!-- Embedding inline JavaScript -->
+<script>
+ // returns the element update and changes the color to orange
+document.getElementById("update").style.color = "orange";
+</script>
+
+</body>
+</html>

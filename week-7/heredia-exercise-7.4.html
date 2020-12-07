@@ -1,0 +1,85 @@
+<!--
+============================================
+; Title:  heredia-discussion-7.4.js
+; Author: Professor Krasso
+; Date:   06 December 2020
+; Modified By: Daniel Heredia
+; Description: Create simple program using
+; client side javascript in HTML
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exercise 7.4">
+  <meta name="author" content="Daniel Heredia">
+  <!-- Referencing external CSS style sheet -->
+  <link href="../style-sheet.css" type="text/css" rel="stylesheet">
+  <title>Exercise 7.4</title>
+<body>
+  <h1>Computer Components</h1>
+  <!-- Creating a table with four (4) components -->
+    <table>
+        <thead>
+          <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Functions</th>
+          </tr>
+        </thead>
+<!--Creating five (5) rows with each cell containing id, name, amount, and two (2) functions-->
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Laptop</td>
+            <td>1,500.99</td>
+            <!-- Inline Javascript function that opens modal dialogs for Edit and Delete-->
+            <td>
+                <a href="javascript:alert('1')">EDIT</a> |
+                <a href="javascript:confirm('Are you sure?')">DELETE</a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Motherboard</td>
+            <td>35.70</td>
+            <td>
+                <a href="javascript:alert('2')">EDIT</a> |
+                <a href="javascript:confirm('Are you sure?')">DELETE</a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Monitor</td>
+            <td>174.99</td>
+            <td>
+                <a href="javascript:alert('3')">EDIT</a> |
+                <a href="javascript:confirm('Are you sure?')">DELETE</a>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Mouse</td>
+            <td>13.99</td>
+            <td>
+                <a href="javascript:alert('4')">EDIT</a> |
+                <a href="javascript:confirm('Are you sure?')">DELETE</a>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Keyboard</td>
+            <td>14.50</td>
+            <td>
+            <a href="javascript:alert('5')">EDIT</a> |
+            <a href="javascript:confirm('Are you sure?')">DELETE</a>
+          </td>
+          </tr>
+      </tbody>
+      </table>
+</body>
+</html>

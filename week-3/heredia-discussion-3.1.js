@@ -15,19 +15,19 @@
 * Description: Returns a well-formatted string header
 */
 const header = require('/Users/dhered1/Desktop/backup/repos/github/bu-webdev/web-231/week-2/heredia-header.js');
-console.log(header.display("Daniel", "Heredia", "Assignment 2.4"));
+console.log(header.display("Daniel", "Heredia", "Assignment 3.1"));
 
 
 // variable declaration and assignment
 let x = new Date()
 
-// conditional statement
-if x.getHours() >= 6 && getHours() < 9
+// If the hours are between 6am and 3pm display: Learning to code is fun
+if (x.getHours() >= 6 && x.getHours() < 15)
 
 //output
-  console.log("Time to get the day started!");
+  console.log("Learning to code is fun!");
 
-// conditional statement
+// If the hours are after 9am display: Hope you had a great day learning to code
 else
 
 //output

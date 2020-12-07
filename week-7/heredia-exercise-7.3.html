@@ -1,0 +1,71 @@
+<!--
+============================================
+; Title:  heredia-discussion-7.3.js
+; Author: Professor Krasso
+; Date:   06 December 2020
+; Modified By: Daniel Heredia
+; Description: Create simple program using
+; client side javascript in HTML
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exercise 7.3">
+  <meta name="author" content="Daniel Heredia">
+  <!-- Referencing external CSS style sheet -->
+  <link href="../style-sheet.css" type="text/css" rel="stylesheet">
+  <title>Exercise 7.3</title>
+</head>
+<body>
+<!-- Created order list of five (5) grocery items using document.write()-->
+  <script>
+    document.write("<h1>SHOPPING LIST v.1</h1>");
+    document.write("<ol>" +
+      "<li>Oranges</li>"+
+      "<li>Apples</li>"+
+      "<li>Pears</li>"+
+      "<li>Limes</li>"+
+      "<li>Lemons</li>"+
+      "</ol>")
+   </script>
+<!-- Recreated ordered list of five (5) grocery items using an HTML table and the innerHTML function-->
+<div id="list"></div>
+<script>
+ document.getElementById('list').innerHTML = "<h1>SHOPPING LIST v.2</h1>" +
+    "<table>" +
+    "<thead>" +
+    "<tr>" +
+    "<th>Id</th>" + "<th>Item</th>" +
+    "</tr>" +
+    "</thead>" +
+    "<tbody>" +
+    "<tr>" +
+    "<td>1</td>"+
+    "<td>Oranges</td>"+
+    "</tr>" +
+    "<tr>" +
+    "<td>2</td>"+
+    "<td>Apples</td>"+
+    "</tr>" +
+    "<tr>" +
+    "<td>3</td>"+
+    "<td>Pears</td>"+
+    "</tr>" +
+    "<tr>" +
+    "<td>4</td>"+
+    "<td>Limes</td>"+
+    "</tr>" +
+    "<tr>" +
+    "<td>5</td>"+
+    "<td>Lemons</td>"+
+    "</tr>" +
+    "</tbody>" +
+    "</table>"
+</script>
+
+</body>
+</html>
