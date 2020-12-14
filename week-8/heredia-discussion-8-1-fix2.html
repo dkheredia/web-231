@@ -1,0 +1,62 @@
+<!--
+============================================
+; Title:  DOM Manipulation (jQuery)
+; Author: Professor Krasso
+; Date:   09 December 2020
+; Update: Daniel Heredia
+; Description: Create a simple HTML page with 2 jQuery errors
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+  <!-- A numbered list of Spiderman movies-->
+  <div id="movie">
+    <h1>Which of these is the best Spiderman Movie</h1>
+    <ol id="movielist">
+      <li id="movie1">The Amazing Spider-man (2012)</li>
+      <li id="movie2"> The Amazing Spider-man 2 (2016)</li>
+      <li id="movie3">Spider-Man (2002)</li>
+      <li id="movie4">Spider-Man 2 (2004)</li>
+      <li id="movie5">Spider-Man: Into the Spider verse (2018)</li>
+      <li id="movie6">Spider-Man: Homecoming (2017)</li>
+    </ol>
+  </div>
+  <!--css starts here-->
+  <style>
+
+    #movielist{
+      margin: 30px;
+     background: #F8F8FF;
+     width:40%;
+
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+  //Program starts here
+  /* Outcome is when page loads hover mouse over list until the best movie (Spider-Man: Into the Spider verse (2018)) is highlighted */
+
+  //This will be called when the document is ready
+$(document).ready(function(){
+  //When hovered over this line will be ran
+  // Added missing hashtag in order to target movie5 from the list
+ $("#movie5").hover(function(){
+   //This will set the color property of hidden element to blue
+   // Added missing quotes around the property name "color"
+   $(this).css("color", "blue");
+ },
+  function(){
+
+ })
+ })
+ //added missing terminating script tag
+</script>

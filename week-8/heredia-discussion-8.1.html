@@ -1,0 +1,57 @@
+<!--
+============================================
+; Title:  heredia-discussion-8.1.html
+; Author: Professor Krasso
+; Date:   10 December 2020
+; Modified By: Daniel Heredia
+; Description: Create simple HTML page
+; with (2) jQuery errors.
+============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discussion 8.1">
+  <meta name="author" content="Daniel Heredia">
+  <title>Discussion 8.1</title>
+<!--Allowing CDN to serve jQuery library-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--Inline CSS-->
+  <style>
+    #present{
+      width:150px;
+      height:140px;
+      background-color: green;
+    }
+  </style>
+
+  <script>
+// jQuery to begin for the entire document
+    $("document").ready(function(){
+// jQuery to update the color to red for h1 tags in the document
+    $("h1")css("color","red");
+// jQuery to create an action when the mouse is clicked
+    $"#present".on("click", whenMouseIsClicked);
+// Displays alert box when clicking the mouse on the box
+    function whenMouseIsClicked(){
+      alert("Happy Holidays!!!!");
+    }
+
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <h1>Click on the Box to see More</h1>
+
+  <div id="present"></div>
+
+</body>
+</html>

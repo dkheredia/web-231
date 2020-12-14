@@ -1,0 +1,84 @@
+<!--
+============================================
+; Title:  heredia-discussion-8.2.html
+; Author: Professor Krasso
+; Date:   12 December 2020
+; Modified By: Daniel Heredia
+; Description: Dynamically create and
+; manipulate HTML content
+============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discussion 8.2">
+  <meta name="author" content="Daniel Heredia">
+  <title>Discussion 8.2</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- Inline CSS-->
+<style type="text/css">
+  body{
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+  }
+  .topnav{
+    width: 100%;
+    height:60px;
+    background: grey;
+  }
+  #fruits{
+    margin:0 auto;
+    padding-top: 20px;
+    }
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+</style>
+
+
+</head>
+<body>
+<!-- Creating a top navigational bar-->
+  <div class="topnav"></div>
+<!-- Creating fruits element to be used during javascript-->
+  <div id="fruits"></div>
+  <script>
+// Creating an array of fruits with two fields id and type
+  var fruits = [
+  {
+    id:1,
+    type: "Banana"
+  },
+  {
+    id:2,
+    type: "Strawberry"
+  },
+  {
+    id:3,
+    type: "Blueberry"
+  },
+  {
+    id:4,
+    type: "Orange"
+  }
+  ]
+// Declaring variable to be used for output of array
+  let out = "<h1>Fruits</h1><ul>";
+
+// Loop to iterate over the array of fruits
+fruits.forEach(fruit => {
+      out+= `<li>Fruit ID: ${fruit.id} Fruit type: ${fruit.type}</li>`
+    });
+
+    out+= `</ul>`
+    // JavaScript is used to find the fruits div and the innerHTML function is assigned the string variable out
+    document.getElementById('fruits').innerHTML = out;
+</script>
+</body>
+</html>

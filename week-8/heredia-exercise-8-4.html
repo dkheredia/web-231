@@ -1,0 +1,100 @@
+<!--
+============================================
+; Title:  heredia-discussion-8.4.html
+; Author: Professor Krasso
+; Date:   12 December 2020
+; Modified By: Daniel Heredia
+; Description: Dynamically create and
+; manipulate HTML content
+============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discussion 8.4">
+  <meta name="author" content="Daniel Heredia">
+  <title>Discussion 8.4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Referencing external CSS style sheet -->
+  <link href="../style-sheet.css" type="text/css" rel="stylesheet">
+</head>
+
+
+<body>
+<!-- Creating person element to be used during javascript-->
+  <div id="emps"></div>
+
+  <script type="text/javascript">
+// JavaScript Constructor employee object with an id, firstName, lastName, and title
+  function Employee(id, firstName, lastName, title) {
+      this.id = id;
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.title = title;
+         }
+
+// Array of five (5) employees
+  const employees = [
+      new Employee('1', 'Thomas', 'Edison','Software Engineer'),
+      new Employee('2', "Benjamin", "Franklin","Programmer"),
+      new Employee('3', "Nikola", "Tesla","Project Manager"),
+      new Employee('4', "Charles", "Babbage","Product Manager"),
+      new Employee('5', "Alexander", "Bell","Business Analyst"),
+      ];
+
+// getEmployee() function that accepts an id argument, iterates over the employee's array, and outputs the matched employee record
+  function getEmployee(id)
+    {
+        for (const employee of employees)
+        {
+            if (employee.id === id)
+            {
+                return employee;
+            }
+        }
+    }
+
+// Create a string variable named "output" and build an HTML table
+  let output = `<h1>Employee Listing</h1><table><thead>
+  <tr>
+  <th>Id</th>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Title</th>
+  </tr>
+  </thead>`
+
+// Iterate over the employee's array and append each employee property using <td> </td> tag
+  for (const employee of employees)
+  {
+      output += `<tr><td>${employee.id}</td><td>${employee.firstName}</td><td>${employee.lastName}</td><td>${employee.title}</td></tr>`
+
+  }
+    output += `</table>`
+
+// Assign the output string to the "emps" through the innerHTML function
+  document.getElementById("emps").innerHTML = output;
+
+// onClick event for $("table tr") and call the find('td:first').html() function
+    $(function () {
+      $("table tr").click(function () {
+        //Registered an onClick event for table tr calling for the td first cell to be found
+        const employeeId = $(this).find("td:first").html();
+        //Using the getEmployee function to find the selectedEmployee object
+        const selectedEmployee = getEmployee(employeeId);
+        //Added javascript alert box to get the desired output for the row
+        alert(`${selectedEmployee.id} ${selectedEmployee.firstName} ${selectedEmployee.lastName} ${selectedEmployee.title}`)
+     })
+});
+
+      </script>
+  </body>
+   </html>
+
+
+

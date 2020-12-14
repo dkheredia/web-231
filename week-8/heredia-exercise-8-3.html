@@ -1,0 +1,84 @@
+<!--
+============================================
+; Title:  heredia-discussion-8.3.html
+; Author: Professor Krasso
+; Date:   12 December 2020
+; Modified By: Daniel Heredia
+; Description: Dynamically create and
+; manipulate HTML content
+============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discussion 8.3">
+  <meta name="author" content="Daniel Heredia">
+  <title>Discussion 8.3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Referencing external CSS style sheet -->
+  <link href="../style-sheet.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Creating a top navigational bar-->
+<div class="topnav"></div>
+<!-- Header for paragraph -->
+  <h1>Paragraph 1</h1>
+<!-- HTML button named Toggle -->
+  <button type="button">Toggle</button>
+<!-- Paragraph of Lorem Ipsum-->
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla scelerisque neque, et interdum sapien tincidunt id. In hac habitasse platea dictumst. Suspendisse ac augue id velit aliquet semper. Sed consectetur, purus ac pretium finibus, velit orci malesuada tellus, ac mollis mauris enim sit amet ligula. Etiam et leo arcu. Cras rutrum mauris et sollicitudin porttitor. Sed rhoncus neque et felis posuere fringilla. Mauris sagittis porta libero, ut blandit purus ultricies in. Quisque pellentesque sem sed justo gravida viverra. Nunc eleifend lacus eu odio tempus ultricies ut eget metus. Etiam imperdiet venenatis ultrices. Proin aliquet orci vitae orci malesuada volutpat. Integer suscipit, odio a lobortis rutrum, lacus risus vehicula lacus, nec vulputate orci libero non lorem.
+  </p>
+<!-- HTML Table of five (5) fruits with fields ID and Type-->
+  <table>
+    <tr>
+      <td>ID</td>
+      <td>Type</td>
+    </tr>
+    <tr>
+      <td><a href= "#" class="Id">1</a></td>
+      <td>Banana</td>
+    </tr>
+    <tr>
+      <td><a href= "#" class="Id">2</a></td>
+      <td>Strawberry</td>
+    </tr>
+    <tr>
+      <td><a href= "#" class="Id">3</a></td>
+      <td>Blueberry</td>
+    </tr>
+    <tr>
+      <td><a href= "#" class="Id">4</a></td>
+      <td>Orange</td>
+    </tr>
+    <tr>
+      <td><a href= "#" class="Id">5</a></td>
+      <td>Mango</td>
+    </tr>
+  </table>
+
+
+<script type="text/javascript">
+// jQuery function to show and hide paragraph each time the button is clicked
+$("button").click(function(){
+  $("p").toggle();
+});
+
+// jQuery function to output the ID and Type of the fruit to an alert window when ID is clicked
+$(".Id").click(function(event) {
+event.preventDefault();
+var Id = $(this).text();
+var Type = $(this).closest("td").next().text();
+alert("{ID: " + Id + ", Type: " + Type + "}");
+});
+
+</script>
+
+</body>
+</html>

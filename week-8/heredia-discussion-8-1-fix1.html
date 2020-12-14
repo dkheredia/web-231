@@ -1,0 +1,37 @@
+<!--
+============================================
+; Title:  DOM Manipulation (jQuery)
+; Author: James Liverman
+; Date:   10 December 2020
+; Updated: Daniel Heredia
+; Description: Create a simple HTML page with 2 jQuery errors
+;===========================================
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+// Corrected syntax by adding .ready to the function in order
+//  for jQuery to begin for the entire document once loaded
+$(document).ready(function(){
+  $("button").click(function(){
+    // missing .html to return the content Hello World!
+    $("p").html("Hello <b>World!</b>");
+  });
+});
+
+</script>
+</head>
+<body>
+
+<!--Hover over the below button and Press to change the content-->
+<button>Change content of all p elements</button>
+<!-- After pressing the above Button, the paragraphs should change to be Hello World with World in
+Bold -->
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
